@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+  <script src="js/scripts.js"></script>
+  <link href="css/styles.css" rel="stylesheet" type="text/css">
+  <title>Furniture Store</title>
+</head>
+<body>
+  <h1>Furniture Store</h1>
+  <p>Choose one of our products below:</p>
+  <form id="selectionForm">
+    <input type="radio" name="product" value="sofa" id="sofa" checked>
+    <label for="sofa">Sofa</label><br>
+    <input type="radio" name="product" value="chair" id="chair">
+    <label for="chair">Armchair</label><br>
+    <input type="radio" name="product" value="table" id="table">
+    <label for="table">Table</label><br>
+    <button type="submit" id="selectionButton">Submit</button>
+  </form>
+  <div class="hidden" id="userOrder">
+    <h1>Your Order</h1>
+    <p>You have selected <div id="userSelection"></div>. Please fill out the forms below to complete your order.</p>
+    <form id="purchaseInfo">
+      <label for="shipping">Shipping Information</label>
+      <input id="shipping" type="text" name="shipping">
+      <label for="paymentInfo">Payment Information</label>
+      <input id="paymentInfo" type="text" name="paymentInfo">
+      <button type="submit" id="purchaseButton">Submit</button>
+    </form>
+  </div>
+  <div class="hidden" id="receipt">
+    <h1>Your Receipt</h1>
+    <p>Thank you for shopping with us! Here is a receipt of your order:</p>
+    <p id="userReceipt"></p>
+  </div>
+</body>
+</html>
