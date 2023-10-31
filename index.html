@@ -8,7 +8,7 @@
 <body>
   <h1>Furniture Store</h1>
   <p>Choose one of our products below:</p>
-  <form id="selectionForm">
+  <form id="productForm">
     <input type="radio" name="product" value="sofa" id="sofa" checked>
     <label for="sofa">Sofa</label><br>
     <input type="radio" name="product" value="chair" id="chair">
@@ -19,19 +19,21 @@
   </form>
   <div class="hidden" id="userOrder">
     <h1>Your Order</h1>
-    <p>You have selected <div id="userSelection"></div>. Please fill out the forms below to complete your order.</p>
+    <p>You have selected <span id="userSelection"></span>. Please fill out the forms below to complete your order.</p>
     <form id="purchaseInfo">
       <label for="shipping">Shipping Information</label>
-      <input id="shipping" type="text" name="shipping">
+      <input id="shipping" type="text" name="shipping"><br>
       <label for="paymentInfo">Payment Information</label>
-      <input id="paymentInfo" type="text" name="paymentInfo">
+      <input id="paymentInfo" type="text" name="paymentInfo"><br>
       <button type="submit" id="purchaseButton">Submit</button>
     </form>
   </div>
   <div class="hidden" id="receipt">
     <h1>Your Receipt</h1>
     <p>Thank you for shopping with us! Here is a receipt of your order:</p>
-    <p id="userReceipt"></p>
+    <p id="userReceipt1"></p>
+    <p id="userReceipt2"></p>
+    <p id="userReceipt3"></p>
   </div>
 </body>
 </html>
