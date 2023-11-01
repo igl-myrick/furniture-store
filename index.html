@@ -10,16 +10,17 @@
   <p>Choose one of our products below:</p>
   <form id="productForm">
     <input type="radio" name="product" value="sofa" id="sofa" checked>
-    <label for="sofa">Sofa</label><br>
+    <label for="sofa">Sofa - $80</label><br>
     <input type="radio" name="product" value="chair" id="chair">
-    <label for="chair">Armchair</label><br>
+    <label for="chair">Armchair - $50</label><br>
     <input type="radio" name="product" value="table" id="table">
-    <label for="table">Table</label><br>
+    <label for="table">Table - $100</label><br>
     <button type="submit" id="selectionButton">Submit</button>
   </form>
   <div class="hidden" id="userOrder">
     <h1>Your Order</h1>
-    <p>You have selected <span id="userSelection"></span>. Please fill out the forms below to complete your order.</p>
+    <p>You have selected our <span id="userSelection"></span>. Please fill out the forms below to complete your order.</p>
+    <p id="discount"></p>
     <form id="purchaseInfo">
       <label for="shipping">Shipping Information</label>
       <input id="shipping" type="text" name="shipping"><br>
