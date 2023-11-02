@@ -4,12 +4,6 @@ window.addEventListener("load", function() {
   let userProduct = document.querySelector("input[name='product']:checked").value;
   let discountedPrice;
   
-  function productSelection(discount) {
-    document.getElementById("userSelection").innerText = userProduct;
-    discountedPrice = (price - discount);
-    document.getElementById("discount").innerText = "DISCOUNT: We currently have a 20% discount running on " + userProduct + "s! Your order has been reduced to $" + discountedPrice + ".";
-  }
-  
   let price;
   if (userProduct === "sofa") {
     price = 80;
@@ -17,6 +11,12 @@ window.addEventListener("load", function() {
     price = 50;
   } else if (userProduct === "table") {
     price = 100;
+  }
+  
+  function productSelection(discount) {
+    document.getElementById("userSelection").innerText = userProduct;
+    discountedPrice = (price - discount);
+    document.getElementById("discount").innerText = "DISCOUNT: We currently have a 20% discount running on " + userProduct + "s! Your order has been reduced to $" + discountedPrice + ".";
   }
 
   productForm.addEventListener("submit", function(e) {
@@ -39,7 +39,7 @@ window.addEventListener("load", function() {
     const userShippingInfo = document.getElementById("shipping").value;
     const userPaymentInfo = document.getElementById("paymentInfo").value;
 
-    document.getElementById("userReceipt1").innerText = userProduct.toUpperCase() + " $" + discountedPrice;
+    document.getElementById("userReceipt1").innerText = userProduct.toUpperCase() + " - $" + discountedPrice;
     document.getElementById("userReceipt2").innerText = userShippingInfo.toUpperCase();
     document.getElementById("userReceipt3").innerText = userPaymentInfo.toUpperCase();
   });

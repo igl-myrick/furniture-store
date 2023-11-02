@@ -6,6 +6,11 @@
   <title>Furniture Store</title>
 </head>
 <body>
+  <div class="images">
+    <img src="img/sofa.jpg" height="600px" width="400px" alt="A photo of a sofa.">
+    <img src="img/chair.jpg" height="600px" width="400px" alt="A photo of a chair.">
+    <img src="img/table.jpg" height="600px" width="400px" alt="A photo of a table.">
+  </div>
   <h1>Furniture Store</h1>
   <p>Choose one of our products below:</p>
   <form id="productForm">
@@ -18,6 +23,7 @@
     <button type="submit" id="selectionButton">Submit</button>
   </form>
   <div class="hidden" id="userOrder">
+    <hr>
     <h1>Your Order</h1>
     <p>You have selected our <span id="userSelection"></span>. Please fill out the forms below to complete your order.</p>
     <p id="discount"></p>
@@ -30,6 +36,7 @@
     </form>
   </div>
   <div class="hidden" id="receipt">
+    <hr>
     <h1>Your Receipt</h1>
     <p>Thank you for shopping with us! Here is a receipt of your order:</p>
     <p id="userReceipt1"></p>

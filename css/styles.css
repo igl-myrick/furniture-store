@@ -1,3 +1,25 @@
 .hidden {
   display: none;
 }
+
+body {
+  font-family: 'Calibri';
+  line-height: 26px;
+  background-color: #dcdcdc;
+  text-align: center;
+}
+
+h1 {
+  font-family: 'Trebuchet MS';
+}
+
+.images {
+  float: right;
+  background-color: #bbbbbb;
+  padding: 10px;
+  margin-top: 20px;
+}
+
+hr {
+  width: 30%;
+}
