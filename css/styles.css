@@ -11,15 +11,25 @@ body {
 
 h1 {
   font-family: 'Trebuchet MS';
+  background-color: #cccccc;
+  width: 350px;
+  margin-left: 44px;
 }
 
-.images {
-  float: right;
-  background-color: #bbbbbb;
-  padding: 10px;
+.container-fluid {
+  width: 98%;
   margin-top: 20px;
 }
 
-hr {
-  width: 30%;
+.image {
+  padding-left: 8px;
+  padding-right: 8px;
+  padding-top: 24px;
+  background-color: #bbbbbb;
+  height: 666px;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
 }
